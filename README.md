@@ -34,3 +34,9 @@
    3. use state hook
    4. use effect hook
    5. use reducer hook
+      After completing this lesson, the we need to improve the HomeScreen component so that it supports
+      a variety of states such as errors, loading, etc.
+9. Manage States By Using Reducer Hooks
+   1. define a reducer
+   2. update fetch data
+   3. get state from useReducer
