@@ -1,4 +1,4 @@
-# MERN Aamazona - Udemy Course by Bassir Jafarzadeh
+# MERN Amazona - Udemy Course by Bassir Jafarzadeh
 
 # Lessons
 
