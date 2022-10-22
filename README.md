@@ -43,3 +43,10 @@
 10. Apply React Bootstrap UI Framework
     1. npm install react-bootstrap bootstrap
     2. update App.js
+11. Create Product and Rating Component
+    1. create rating component
+    2. create product component
+    3. Use rating component in product component
+12. Create Product Details Screen
+    1. fetch a product from backend
+    2. creae 3 columns for image, info, and screen
