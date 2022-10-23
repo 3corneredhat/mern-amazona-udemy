@@ -3,6 +3,7 @@ import axios from 'axios';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from '../components/Product';
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
