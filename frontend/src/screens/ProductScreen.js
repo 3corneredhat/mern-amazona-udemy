@@ -5,8 +5,10 @@ import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Rating from '../components/Rating';
+import { Helmet } from 'react-helmet-async';
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -70,6 +72,9 @@ function ProductScreen() {
         <Col md={3}>
           <ListGroup vairant="flush">
             <ListGroup.Item>
+              <Helmet>
+                <title>{product.name}</title>
+              </Helmet>
               <h1>{product.name}</h1>
             </ListGroup.Item>
             <ListGroup.Item>
@@ -106,6 +111,17 @@ function ProductScreen() {
                     </Col>
                   </Row>
                 </ListGroup.Item>
+                {/* This is a conditional rendering where IF the 
+                product countInStock is greater than 0 then it 
+                then we render a button within a ListItem that 
+                allows us to add it to the cart.*/}
+                {product.countInStock > 0 && (
+                  <ListGroup.Item>
+                    <div className="d-grid">
+                      <Button variant="primary">Add to cart</Button>
+                    </div>
+                  </ListGroup.Item>
+                )}
               </ListGroup>
             </Card.Body>
           </Card>{' '}
